@@ -1501,7 +1501,8 @@ def main():
                 if st.button("Send", key="send_chat_btn"):
                     if user_message.strip():
                         st.session_state.chat_history.append({"role": "user", "content": user_message.strip()})
-                        st.session_state.chat_input = ""
+                        ai_response = route_request(user_message.strip(), "chat")
+                        st.session_state.chat_history.append({"role": "assistant", "content": ai_response})
                         st.rerun()
         
         elif st.session_state.active_tab == "New Profile":
