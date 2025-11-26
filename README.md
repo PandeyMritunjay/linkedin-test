@@ -47,20 +47,6 @@ pip install -r requirements.txt
 ### 3. Set Up API Keys
 Create a `.env` file in the project root:
 
-```env
-# Apify LinkedIn Scraper (WORKING - Required for real data)
-APIFY_API_KEY=apify_api_hIZ46DC21UJ2OjChR2FMB8tDY7nqNp11T1tR
-APIFY_LINKEDIN_ACTOR=mritunjayp.tt.21/mass-linkedin-profile-scraper
-
-# NVIDIA AI (FREE - Primary Provider)
-NVIDIA_API_KEY=your_nvidia_api_key_here
-
-# Optional: Additional free providers
-GROQ_API_KEY=your_groq_key_here
-HUGGINGFACE_API_TOKEN=your_hf_token_here
-```
-
-**Note**: The Apify credentials are already configured and working. You only need to add AI provider keys for enhanced features.
 
 ### 4. Run Application
 
@@ -95,8 +81,7 @@ The application will open in your browser at `http://localhost:8501`
 heroku create your-app-name
 
 # Set environment variables
-heroku config:set APIFY_API_KEY=apify_api_hIZ46DC21UJ2OjChR2FMB8tDY7nqNp11T1tR
-heroku config:set APIFY_LINKEDIN_ACTOR=mritunjayp.tt.21/mass-linkedin-profile-scraper
+
 
 # Deploy
 git push heroku main
@@ -329,5 +314,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Built with NVIDIA AI, Streamlit, and Python**
+
 
 *Transform your LinkedIn presence with AI-powered insights and recommendations!*
